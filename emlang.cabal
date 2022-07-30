@@ -1,0 +1,63 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           emlang
+version:        0.1.0.0
+description:    Please see the README
+author:         Tony Mu
+maintainer:     tonymuu@gmail.com
+license:        NCSA
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_emlang
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , parsec
+    , unordered-containers >=0.2
+  default-language: Haskell2010
+
+executable emlang
+  main-is: Main.hs
+  other-modules:
+      Paths_emlang
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , emlang
+    , parsec
+    , unordered-containers >=0.2
+  default-language: Haskell2010
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_emlang
+  hs-source-dirs:
+      test
+  default-extensions:
+      NamedFieldPuns
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      HUnit >=1.5
+    , QuickCheck >=2.9.0
+    , base >=4.7 && <5
+    , emlang
+    , parsec
+    , test-framework
+    , test-framework-quickcheck2
+    , unordered-containers >=0.2
+  default-language: Haskell2010
