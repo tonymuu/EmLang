@@ -21,15 +21,19 @@ Instead of running ```stack repl```, run ```stack test``` which will run all of 
 
 ## Sample programs
 ### How to Print
+
 Printing is easy in EmLang! Just do 🖨️ to print and pop the top of the stack, or 🖨️🎉 to print the entire stack!
 
 For example, to print the current stack:
+
 ![image](https://user-images.githubusercontent.com/10318596/183010336-acb6d86f-d928-4f4e-8b8f-124d365e548d.png)
 
 To print and pop the top element of the stack:
+
 ![image](https://user-images.githubusercontent.com/10318596/183010407-88944da2-1728-423e-8fd8-884657776cf1.png)
 
 And now the stack looks like this:
+
 ![image](https://user-images.githubusercontent.com/10318596/183010458-f3242e3a-7f19-45e8-946d-e56420d7b406.png)
 
 
@@ -40,6 +44,7 @@ The following block of code defines a "max" function which returns the biggest o
 ```✏️📖 max 🪞 ☀️ 🪞 ☀️ 😀⚖️ 🤔 🙃 🤖 💦 📕```
 
 Running the max function:
+
 ![image](https://user-images.githubusercontent.com/10318596/183010627-488ffc80-e6df-4326-8361-1d047aaa13dc.png)
 
 Of course, since this is EmLang, it is recommended that you define functions in Emojis too! We should define the above max function with the 🐶 emoji:
@@ -47,6 +52,7 @@ Of course, since this is EmLang, it is recommended that you define functions in 
 ```✏️📖 🐶 🪞 ☀️ 🪞 ☀️ 😀⚖️ 🤔 🙃 🤖 💦 📕```
 
 And the results of calling our new 🐶 function is:
+
 ![image](https://user-images.githubusercontent.com/10318596/183010924-be272115-6648-41bb-917e-6d1d76f75998.png)
 
 
