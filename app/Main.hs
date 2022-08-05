@@ -36,6 +36,7 @@ repl state
                  in  do mapM_ putStrLn (reverse output)
                         repl (is, d, [])
 
-main = do putStrLn "Welcome to your Forth interpreter!"
+main = do putStrLn "Welcome to the 😍EmLang😍 world! 🥳🙌🎈"
+          putStrLn "Check out 😎https://github.com/tonymuu/EmLang😎 for ☀️sample programs☀️ and 😸tutorials😸!"
           repl initialForthState
 
